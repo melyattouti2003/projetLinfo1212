@@ -16,14 +16,14 @@ Le projet est organisé en 3 dossiers :
 ### html
 
 Ce dossier comprend les 3 pages HTML :
-- **principale.html** : page de consultation des incidents  
-- **incident.html** : page d'ajout d'incidents  
-- **identification.html** : page d'identification/création de comptes  
+- **principale.html** : page de consultation des incidents.
+- **incident.html** : page d'ajout d'incidents.
+- **identification.html** : page d'identification/création de comptes.
 
 ### css
 
 Ce dossier comprend 2 pages CSS :
-- **principale.css** : page de style basique pour la page principale (tableau)  
+- **principale.css** : page de style basique pour la page principale (tableau).
 - **header.css** : page de style de la barre de navigation (imbriquée dans une balise "header"), réutilisée sur l'ensemble des pages HTML.  
 
 ### features
