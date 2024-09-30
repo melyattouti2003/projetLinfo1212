@@ -1,0 +1,21 @@
+#incident_day_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid grey;
+    height: 40px;
+    padding: 5px;
+}
+#actualDay{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+}
+#actualDayValue{
+    border: 1px solid black;
+    margin-left: 2px;
+}
+td{
+    border: 1px solid black;
+}
