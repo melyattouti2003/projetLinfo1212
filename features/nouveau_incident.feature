@@ -1,8 +1,8 @@
-Fonctionnalité: Nouveau incident 
+Fonctionnalité: Nouvel incident
 
-Scénario: l'utilisateur veut ajouter un nouveau incident
-Etant donné que l'utilisateur est connecté à son compte
+Scénario: L'utilisateur veut ajouter un nouvel incident
+Étant donné que l'utilisateur est connecté à son compte
 Et qu'il est sur la page d'ajout d'incident
-Et qu'il est complété les sections adéquates
-Lorsque qu'il soumet ce nouveau incident
-Alors l'incident est ajouté la liste des incidents
+Et qu'il a complété les sections adéquates
+Lorsque qu'il soumet ce nouvel incident
+Alors l'incident est ajouté à la liste des incidents
