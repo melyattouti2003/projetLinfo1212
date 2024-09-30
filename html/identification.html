@@ -3,33 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Identification</title>
-    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
   </head>
   <body>
     <header>
-        <div id="header_titleBox">
-            <div id="header_title">Identification</div>
-            <img id="header_logo" src="">
-        </div>
-        <div id="header_c_toRight">
-            <div id="header_search">
-                <input type="text" placeholder="Champs de recherche">
+        <nav id="header_nav">
+            <div id="header_titleBox">
+                <div id="header_title">Identification</div>
+                <img id="header_logo" src="">
             </div>
-            <div id="header_user">Nom de l'utilisateur</div>
-        </div>
+            <div id="header_c_toRight">
+                <div id="header_search">
+                    <input type="text" placeholder="Champs de recherche">
+                </div>
+                <div id="header_user">Nom de l'utilisateur</div>
+            </div>
+        </nav>
     </header>
         <!--Compte existant-->
         <form id="login_form">
         <p>Compte existant</p>
         <div id="info_row">
-            <div id="info_title">Nom d'utilisateur</div>
-            <input type="text">
+            <label for="username_login">Nom d'utilisateur : </label>
+            <input type="text" id="username_login" name="username_login">
         </div>
-        <div id="info_row"></div>
-            <div id="info_title">Mot de passe</div>
-            <input type="password" placeholder="">
+        <div id="info_row">
+            <label for="password_login">Mot de passe : </label>
+            <input type="password" id="password_login" name="password_login">
         </div>
-        <br>
         <input type="submit" value="S'identifier">
         </form>
 
@@ -37,22 +38,21 @@
         <form id="sign_up_form">
         <p>Nouveau compte</p>
         <div id="info_row">
-            <div id="info_title">Nom d'utilisateur</div>
-            <input type="text">
+            <label for="username_sign_up">Nom d'utilisateur : </label>
+            <input type="text" id="username_sign_up" name="username_sign_up">
         </div>
-        <div id="info_row"></div>
-            <div id="info_title">Mot de passe</div>
-            <input type="password" placeholder="">
+        <div id="info_row">
+            <label for="password_sign_up">Mot de passe : </label>
+            <input type="password" id="password_sign_up" name="password_sign_up">
         </div>
-        <div id="info_row"></div>
-            <div id="info_title">Nom complet</div>
-            <input type="text">
+        <div id="info_row">
+            <label for="completeName_sign_up">Nom complet : </label>
+            <input type="text" id="completeName_sign_up" name="completeName_sign_up">
         </div>
-        <div id="info_row"></div>
-            <div id="info_title">Adresse e-mail</div>
-            <input type="email">
+        <div id="info_row">
+            <label for="email_sign_up">Adresse e-mail : </label>
+            <input type="email" id="email_sign_up" name="email_sign_up">
         </div>
-        <br>
         <input type="submit" value="S'enregistrer">
         </form>
   </body>
