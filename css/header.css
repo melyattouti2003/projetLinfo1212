@@ -1,23 +1,15 @@
-header {
-  margin: 0;
-  padding: 0;
-}
 #header_nav {
-  top: 0;
+  padding: 0px 20px 0px 50px;
+  margin: -8px -8px 0px -8px;
   display: flex;
   flex-direction: row;
-  border-bottom: 2px solid black;
-  height: 40px;
-  padding: 5px;
-  align-items: center;
-  position: relative;
+  justify-content: space-between;
+  box-shadow: 0px 5px 15px rgb(226, 225, 225);
 }
 #header_titleBox {
-  display: flex;
-  flex-direction: row;
-  border: 2px solid black;
+  left: 30px;
 }
-#header_title {
+#header_titleBox p {
   font-size: 20px;
   font-weight: 600;
 }
@@ -25,19 +17,38 @@ header {
   height: 100%;
 }
 #header_c_toRight {
-  position: absolute;
+  position: flex;
   right: 10px;
+  top: 40px;
   display: flex;
   flex-direction: row;
-  height: 100%;
+  justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 #header_search input[type="search"] {
   border: 2px solid black;
+  border-radius: 20px;
   outline: none;
   padding: 5px;
   margin: 5px;
 }
+.connexion a {
+  color: black;
+  text-decoration: none;
+}
+.connexion button {
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: beige;
+}
+.connexion :hover {
+  background-color: rgba(218, 230, 189, 0.938);
+}
 #header_user {
   text-decoration: underline 1px solid black;
+}
+.corp_page {
+  margin: 50px;
 }
