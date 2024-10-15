@@ -20,4 +20,6 @@ app.get("/identification.ejs", (req, res) => {
 });
 
 app.use(express.static("css"));
+app.use(express.static("javascript"));
+
 app.listen(8080);
