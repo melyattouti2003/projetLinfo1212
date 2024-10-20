@@ -18,11 +18,8 @@ button {
   color: black;
   border-radius: 15px;
 }
-.form_login button {
-  position: absolute;
-  top: 500px;
-}
-.form_login button :hover {
+
+button :hover {
   position: absolute;
   top: 500px;
   background-color: aqua;
