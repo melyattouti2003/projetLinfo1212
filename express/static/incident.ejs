@@ -17,7 +17,7 @@
         <nav id="header_nav">
             <div id="header_titleBox">
                 <p>Création d'incident</p>
-                <a href="principale.ejs"><img id="header_logo" src="" alt="image"></a>
+                <a href="/"><img id="header_logo" src="" alt="image"></a>
             </div>
             <div id="header_c_toRight">
                 <div id="header_search">
@@ -32,14 +32,14 @@
     <main>
         <h1>Signaler un nouvel incident</h1>
         <p>Pour signaler un incident, veulliez remplir le formulaire si-dessous </p>
-        <form id="incident_form">
+        <form id="incident_form" action="newIncident" method="GET">
             <div class="incident_info">
                 <h3>Description</h3>
-                <textarea></textarea>
+                <textarea id="incident_info" name="incident_info"></textarea>
             </div>
-            <div class="incident_info">
+            <div class="incident_adresse">
                 <h3>Adresse</h3>
-                <textarea></textarea>
+                <textarea id="incident_adresse" name="incident_adresse"></textarea>
             </div>
             <br>
             <input type="submit" value="Soumettre">
