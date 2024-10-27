@@ -20,17 +20,19 @@
                 <a href="/"><img id="header_logo" src="" alt="image"></a>
             </div>
             <div id="header_c_toRight">
-                <div id="username">
-                    <% if (typeof user!=='undefined' ){ %>
-                        <%= user %>
-                            <% } %>
-                </div>
                 <div id="header_search">
                     <input type="search" placeholder="Champs de recherche">
                 </div>
-                <div class="connexion">
-                    <button><a href="identification.ejs">Connexion</a></button>
+                <div id="username">
+                    <% if (typeof user!=='undefined' ){ %>
+                        <%= user %>
+                            <% } else { %>
+                                <div class="connexion">
+                                    <button><a href="identification.ejs">Connexion</a></button>
+                                </div>
+                                <% } %>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -78,7 +80,13 @@
 
                                 <%} %>
                     </td>
-                    <td>Un utilisateur 1</td>
+                    <td>
+                        <% if(typeof user !=='undefined' ){%>
+
+                            <%=user%>
+
+                                <%} %>
+                    </td>
                     <td>Une date 1</td>
                 </tr>
 

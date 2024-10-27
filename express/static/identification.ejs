@@ -23,8 +23,14 @@
                 <div id="header_search">
                     <input type="search" placeholder="Champs de recherche">
                 </div>
-                <div class="connexion">
-                    <button><a href="identification.ejs">Connexion</a></button>
+                <div id="username">
+                    <% if (typeof user!=='undefined' ){ %>
+                        <%= user %>
+                            <% } else { %>
+                                <div class="connexion">
+                                    <button><a href="identification.ejs">Connexion</a></button>
+                                </div>
+                                <% } %>
                 </div>
             </div>
         </nav>
