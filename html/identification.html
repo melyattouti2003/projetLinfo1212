@@ -2,66 +2,124 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Identification</title>
-    <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/principale.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="../css/principale.css">
+    
 </head>
 
 <body>
-    <header>
-        <nav id="header_nav">
-            <div id="header_titleBox">
-                <a href="principale.html">image<img id="header_logo" src="" blank="image"></a>
-            </div>
-            <div id="header_c_toRight">
-                <div id="header_search">
-                    <input type="search" placeholder="Champs de recherche">
-                </div>
-                <div id="header_user">Nom de l'utilisateur</div>
-            </div>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">services</a>
+            <a href="#">Contact</a>
         </nav>
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submt"><i class='bx bx-search'></i></button>
+        </form>
     </header>
-    <div id="header_title">Identification</div>
-    <!--Compte existant-->
-    <form id="login_form">
-        <p>Compte existant</p>
-        <div id="info_row">
-            <label for="username_login">Nom d'utilisateur : </label>
-            <input type="text" id="username_login" name="username_login">
-        </div>
-        <div id="info_row">
-            <label for="password_login">Mot de passe : </label>
-            <input type="password" id="password_login" name="password_login">
-        </div>
-        <input type="submit" value="S'identifier">
-    </form>
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <h2 class="logo"></h2>
+            <h2><i class='bx bx-world' ></i>UCL</h2>
+        
+        <div class="text-sci">
+            <h2>Welcome!</span></h2>
+            <p>Ce projet consiste à concevoir des maquettes de pages pour un site web de consultation et d'ajout d'incidents (avec connexion utilisateur).</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
 
-    <!--Nouveau compte-->
-    <form id="sign_up_form">
-        <p>Nouveau compte</p>
-        <div id="info_row">
-            <label for="username_sign_up">Nom d'utilisateur : </label>
-            <input type="text" id="username_sign_up" name="username_sign_up">
+            </div>
         </div>
-        <div id="info_row">
-            <label for="password_sign_up">Mot de passe : </label>
-            <input type="password" id="password_sign_up" name="password_sign_up">
+        <div clas="logreg-box"></div>
+    </div>
+    
+      
+        <div class="logreg-box">
+            <div class="form-box login">
+            <form action="#">
+                <h2>Sign In</h2>
+                <div class="input-box">
+                    <span class="icon">   <i class='bx bxs-envelope'></i></span>
+                    <input type="email"  required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                    <input type="Password" 
+                     required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type ="checkbox"> Remember me 
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn">Sign In</button>
+
+                <div class="login-register">
+                    <P>Don't have an account?  <a 
+                    href="#" class ="login-register">Sign up</a></P>
+                </div>
+            </form>
         </div>
-        <div id="info_row">
-            <label for="completeName_sign_up">Nom complet : </label>
-            <input type="text" id="completeName_sign_up" name="completeName_sign_up">
-        </div>
-        <div id="info_row">
-            <label for="email_sign_up">Adresse e-mail : </label>
-            <input type="email" id="email_sign_up" name="email_sign_up">
-        </div>
-        <input type="submit" value="S'enregistrer">
-    </form>
+
+        <div class="form-box register">
+            <form action="#">
+                <h2>Sign Up</h2>
+                <div class="input-box">
+                    <span class="icon">   <i class='bx bxs-user'></i></span>
+                    <input type="text"  required>
+                    <label>Name</label>
+                 
+                </div>
+                <div class="input-box">
+                    <span class="icon">   <i class='bx bxs-envelope'></i></span>
+                    <input type="email"  required>
+                    <label>Email</label>
+                 
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                    <input type="Password" 
+                    p required>
+
+                    <label>Password</label>
+                    
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type ="checkbox"> I agree to the terms & conditions 
+                    </label>
+                    
+                </div>
+
+                <button type="submit" class="btn">Sign Up</button>
+
+                <div class="login-register">
+                    <P>Already have an account?  <a 
+                    href="#" class ="login-link">Sign in</a></P>
+                </div>
+            
+    </div>
+</div>            
+    <script src="../script.js"></script>
+    
 </body>
 
 </html>
